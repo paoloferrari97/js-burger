@@ -4,12 +4,24 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #fff5e2;
+}
+
+.containerr {
+  width: 50%;
+}
+
 #site_header {
   background-color: #fdbb40;
 }
 
 #site_header > h1 {
   font-weight: 700;
+}
+
+#site_main {
+  background-color: white;
 }
 
 #site_footer {
@@ -20,4 +32,13 @@
 #site_footer > h2,
 #site_footer > span {
   font-weight: 700;
+}
+
+.form-group > img {
+  width: 50px;
+}
+
+.form-group > span {
+  color: #d33359;
+  font-weight: 500;
 }

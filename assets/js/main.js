@@ -41,8 +41,17 @@ document.querySelector("button").addEventListener("click", function () {
                 prezzo += Number(checks[i].getAttribute("data-price"));
             }
         }
-        if (sconto == listaCoupon) {
-            
+        var scontoyn = false;
+        for (var i = 0; i < listaCoupon.length; i++){
+            if (listaCoupon[i][0] == sconto) {
+                prezzo = (prezzo * (100 - listaCoupon[i][1])) / 100;
+                document.getElementById("sconto").innerHTML = `[-${listaCoupon[i][1]}%]`;
+                scontoyn = true;
+            }
+        }
+        if (scontoyn) {
+        } else {
+            document.getElementById("sconto").innerHTML = "";
         }
         document.getElementById("prezzo").innerHTML = prezzo.toFixed(2);
     } else {

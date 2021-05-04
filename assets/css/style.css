@@ -14,22 +14,71 @@ body {
 
 #site_header {
   background-color: #fdbb40;
+  position: relative;
 }
 
-#site_header > h1 {
-  font-weight: 700;
+#site_header > div > h1 {
+  font-weight: bold;
+}
+
+#site_header > img {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: translate(+40%, +35%);
+  width: 200px;
 }
 
 #site_main {
   background-color: white;
 }
 
+.col-6 > label {
+  text-transform: capitalize;
+  font-weight: 600;
+}
+
 button {
   background-color: #fdbb40;
   border: 0px;
   border-radius: 5px;
-  padding: 5px 10px 5px 10px;
+  padding: 10px 20px 10px 20px;
+  font-weight: 700;
+  font-size: 20px;
+  outline: none;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#nome_burger {
+  border: 0px;
+  outline: none;
+  font-size: 30px;
   font-weight: 600;
+}
+
+.ingredients {
+  font-size: 28px;
+}
+
+.coupon {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+#coupon {
+  font-size: 15px;
+  width: 55%;
+  border: 0px;
+  outline: none;
+  background-color: #fff5e2;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+input[type="checkbox"] {
+  outline: none;
 }
 
 #site_footer {
@@ -37,13 +86,14 @@ button {
   color: white;
 }
 
-#site_footer > h2,
-#site_footer > span {
+#site_footer > div > h2,
+#site_footer > div > span {
   font-weight: 700;
 }
 
 .form-group > img {
   width: 50px;
+  margin-right: 20px;
 }
 
 .form-group > span {

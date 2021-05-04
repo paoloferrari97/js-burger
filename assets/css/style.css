@@ -24,6 +24,14 @@ body {
   background-color: white;
 }
 
+button {
+  background-color: #fdbb40;
+  border: 0px;
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+  font-weight: 600;
+}
+
 #site_footer {
   background-color: #d33359;
   color: white;

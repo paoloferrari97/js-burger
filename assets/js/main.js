@@ -32,6 +32,7 @@ listaIngredienti(ingredienti, document.querySelector(".row"));
 // funzione click del bottone
 document.querySelector("button").addEventListener("click", function () {
     var nomeBurger = document.getElementById("nome_burger").value;
+    var sconto = document.getElementById("coupon").value.toLowerCase();
     if (nomeBurger != "") {
         var prezzo = 7.99;
         var checks = document.querySelectorAll("input[type=\"checkbox\"]");
@@ -40,8 +41,19 @@ document.querySelector("button").addEventListener("click", function () {
                 prezzo += Number(checks[i].getAttribute("data-price"));
             }
         }
+        if (sconto == listaCoupon) {
+            
+        }
         document.getElementById("prezzo").innerHTML = prezzo.toFixed(2);
     } else {
         alert("Inserisci il nome del tuo burger!");
     }
 });
+
+// lista coupon (codice sconto | percentuale di sconto)
+var listaCoupon = [
+    ["unto123", "20"],
+    ["coupon87", "50"],
+    ["approfitta2021", "75"],
+    ["gratis00", "100"]
+];

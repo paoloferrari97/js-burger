@@ -52,7 +52,7 @@ document.querySelector("button").addEventListener("click", function () {
         var scontoyn = false;
         for (var i = 0; i < listaCoupon.length; i++){
             if (listaCoupon[i][0] == sconto) {
-                prezzo = (prezzo * (100 - listaCoupon[i][1])) / 100;
+                prezzo = (prezzo * (100 - Number(listaCoupon[i][1]))) / 100;
                 document.getElementById("sconto").innerHTML = `[-${listaCoupon[i][1]}%]`;
                 scontoyn = true;
             }

@@ -87,8 +87,12 @@ input[type="checkbox"] {
 }
 
 #site_footer > div > h2,
-#site_footer > div > span {
+#site_footer > div > div > span {
   font-weight: 700;
+}
+
+#site_footer > div > div > span {
+  font-size: 35px;
 }
 
 .form-group > img {

@@ -8,6 +8,14 @@ var ingredienti = [
     ["ketchup", "1"]
 ];
 
+// lista coupon (codice sconto | percentuale di sconto)
+var listaCoupon = [
+    ["unto123", "20"],
+    ["coupon87", "50"],
+    ["approfitta2021", "75"],
+    ["gratis00", "100"]
+];
+
 // funzione per mettere gli ingredienti nell'html
 function listaIngredienti(lista, el) {
     var i = 0;
@@ -29,7 +37,7 @@ function listaIngredienti(lista, el) {
 // richiamo la funzione per scrivere ingredienti in html
 listaIngredienti(ingredienti, document.querySelector(".row"));
 
-// funzione click del bottone
+// funzione click del bottone (prezzo + prezzo ingrediente - sconto coupon)
 document.querySelector("button").addEventListener("click", function () {
     var nomeBurger = document.getElementById("nome_burger").value;
     var sconto = document.getElementById("coupon").value.toLowerCase();
@@ -58,11 +66,3 @@ document.querySelector("button").addEventListener("click", function () {
         alert("Inserisci il nome del tuo burger!");
     }
 });
-
-// lista coupon (codice sconto | percentuale di sconto)
-var listaCoupon = [
-    ["unto123", "20"],
-    ["coupon87", "50"],
-    ["approfitta2021", "75"],
-    ["gratis00", "100"]
-];

@@ -25,7 +25,7 @@ function listaIngredienti(lista, el) {
         <div class="col-6 form-group">
             <img src="./assets/img/${lista[i][0]}.svg" alt="${lista[i][0]}">
             <label for="${lista[i][0]}">${lista[i][0]}</label>
-            <input type="checkbox" class="mr-3 ml-3" name="${lista[i][0]}" id="${lista[i][0]}" data-price="${lista[i][1]}">
+            <input type="checkbox" class="mr-3 ml-3 checkbox" name="${lista[i][0]}" id="${lista[i][0]}" data-price="${lista[i][1]}">
             <span>add</span>
         </div>
 

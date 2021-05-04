@@ -61,7 +61,7 @@ document.querySelector("button").addEventListener("click", function () {
         } else {
             document.getElementById("sconto").innerHTML = "";
         }
-        document.getElementById("prezzo").innerHTML = prezzo.toFixed(2);
+        document.getElementById("prezzo").innerHTML = "$ " + prezzo.toFixed(2);
     } else {
         alert("Inserisci il nome del tuo burger!");
     }

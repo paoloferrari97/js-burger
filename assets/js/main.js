@@ -31,12 +31,17 @@ listaIngredienti(ingredienti, document.querySelector(".row"));
 
 // funzione click del bottone
 document.querySelector("button").addEventListener("click", function () {
-    var prezzo = 7.99;
-    var checks = document.querySelectorAll("input[type=\"checkbox\"]");
-    for (var i = 0; i < checks.length; i++) {
-        if (checks[i].checked) {
-            prezzo += Number(checks[i].getAttribute("data-price"));
+    var nomeBurger = document.getElementById("nome_burger").value;
+    if (nomeBurger != "") {
+        var prezzo = 7.99;
+        var checks = document.querySelectorAll("input[type=\"checkbox\"]");
+        for (var i = 0; i < checks.length; i++) {
+            if (checks[i].checked) {
+                prezzo += Number(checks[i].getAttribute("data-price"));
+            }
         }
+        document.getElementById("prezzo").innerHTML = prezzo.toFixed(2);
+    } else {
+        alert("Inserisci il nome del tuo burger!");
     }
-    document.getElementById("prezzo").innerHTML = prezzo.toFixed(2);
 });

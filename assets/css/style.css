@@ -1,0 +1,23 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#site_header {
+  background-color: #fdbb40;
+}
+
+#site_header > h1 {
+  font-weight: 700;
+}
+
+#site_footer {
+  background-color: #d33359;
+  color: white;
+}
+
+#site_footer > h2,
+#site_footer > span {
+  font-weight: 700;
+}

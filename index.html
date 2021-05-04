@@ -5,20 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Burger</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
     <link rel="stylesheet" href="./assets/css/style.css">
 </head>
 <body>
     
     <!-- #site_header -->
-    <header id="site_header"></header>
+    <header id="site_header">
+        <div class="container">
+            <h1>Create Your Burger</h1>
+        </div>
+    </header>
     <!-- /#site_header -->
 
     <!-- #site_main -->
-    <main id="site_main"></main>
+    <main id="site_main">
+        <div class="container">
+            <input type="text" placeholder="Name Your Burger" id="nome_burger" name="nome_burger">
+            <div class="row"></div>
+            <label for="coupon">Discount Coupon</label>
+            <input type="text" id="coupon" name="coupon" placeholder="12345ABCDEF">
+        </div>
+    </main>
     <!-- /#site_main -->
 
     <!-- #site_footer -->
-    <footer id="site_footer"></footer>
+    <footer id="site_footer">
+        <div class="container">
+            <h2>Your Price</h2>
+            <span id="prezzo"></span>
+        </div>
+    </footer>
     <!-- /#site_footer -->
 
     <script src="./assets/js/main.js"></script>
